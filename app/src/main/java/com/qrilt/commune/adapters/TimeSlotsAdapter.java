@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
@@ -35,9 +36,16 @@ public class TimeSlotsAdapter extends RecyclerView.Adapter<TimeSlotViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull TimeSlotViewHolder holder, int position) {
-        TimeSlot timeSlot = timeSlots.get(position);
+        final TimeSlot timeSlot = timeSlots.get(position);
         holder.startTimeTextView.setText(timeSlot.getStartDateTime().getHour() + " PM" + " - ");
         holder.endTimeTextView.setText(timeSlot.getEndDateTime().getHour() + " PM");
+
+        holder.availableSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                timeSlot.setAvailable(b);
+            }
+        });
 
         // determine look
 //        if (timeSlot.isAvailable()) {

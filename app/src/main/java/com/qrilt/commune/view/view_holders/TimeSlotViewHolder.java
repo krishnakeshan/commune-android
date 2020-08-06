@@ -19,7 +19,6 @@ public class TimeSlotViewHolder extends RecyclerView.ViewHolder {
     public TimeSlotViewHolder(View view) {
         super(view);
 
-
         startTimeTextView = view.findViewById(R.id.view_holder_time_slot_start_text_view);
         endTimeTextView = view.findViewById(R.id.view_holder_time_slot_end_text_view);
         availableSwitch = view.findViewById(R.id.view_holder_time_slot_available_switch);
