@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5CB2A1</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorTextTimeSlotAvailable">#7DC86E</color>
+    <color name="colorTextTimeSlotUnavailable">#D44746</color>
+    <color name="colorBackgroundTimeSlotAvailable">#EFF8EF</color>
+    <color name="colorBackgroundTimeSlotUnavailable">#F9E6E3</color>
+    <color name="colorSwitchTimeSlotAvailable">#8BD27C</color>
+    <color name="colorSwitchTimeSlotUnavailable">#D84A34</color>
+
+    <color name="colorTextDark">#606060</color>
+    <color name="colorSelectedBackground">#DCEDEA</color>
+    <color name="colorInactive">#CECECE</color>
+</resources>
